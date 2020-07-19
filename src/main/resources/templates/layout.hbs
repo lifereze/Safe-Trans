@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head style="content-align:center;">
+    <title style="content-align:center;">{{#block "title"}}Escrow{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body style="content-align:center;">
+<ul class="nav">
+    <li  class="active"><a href="/">Home</a></li>
+    <li  class="active"><a href="/buyer">Tenant</a></li>
+    <li  class="active"><a href="/seller">Landlord</a></li>
+</ul>
+<div class="container-fluid" style="content-align:center;">
+    <!--begin main template-->
+
+    <div class="main-content" style="content-align:center;">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    </body>
+    </html>
+{{/block}}

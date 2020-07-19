@@ -1,0 +1,49 @@
+{{#partial "content"}}
+
+
+    {{#if username}}
+
+        <div class="row username">
+
+            <h1 class="title">Welcome {{username}}. Make Secure and Reliable Transactions With us</h1>
+        </div>
+        <div class="row indexButton">
+            <div class="create">
+                <a href=""><button class="btn btn-success btn-lg">Tenant</button></a>
+                <a href=""><button class="btn btn-success btn-lg">Landlod</button></a>
+
+            </div>
+
+
+        </div>
+
+        <header class="masthead">
+    {{else}}
+
+            <form action="/welcome" method="post">
+                <h1 class="title">Safe and Secure Housing</h1>
+
+                <div class="sign-in">
+                    <h3 class="text">Enter Your Name to Proceed</h3><br><br>
+                    <label for="username">Name</label>
+                    <input type="text" name="username" id="username">
+                    <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                </div>
+
+
+            </form>
+
+
+
+    {{/if}}
+
+
+
+
+
+
+{{/partial}}
+
+
+
+{{> layout.hbs}}
