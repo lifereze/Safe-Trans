@@ -35,12 +35,14 @@ public class App {
         post("/welcome", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
 
-            String inputtedUsername = request.queryParams("username");
+            String inputtedUsername = request.queryParams("");
             request.session().attribute("username", inputtedUsername);
-            model.put("username", inputtedUsername);
+            model.put("", inputtedUsername);
 
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+
+
 
         //buyer form
         // seller form
