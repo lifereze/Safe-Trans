@@ -564,3 +564,7 @@ a.btn-goback:hover {
    fill: #1059FF;
    transform: rotate(180deg)
 }
+Payment CSS
+    .cc-img {
+        margin: 0 auto;
+    }

@@ -1,8 +1,8 @@
-App.java
- App
+model/tenant.java
+ model.tenant
 model/landlord.java
  model.landlord
 model/user.java
  model.user
-model/tenant.java
- model.tenant
+App.java
+ App
