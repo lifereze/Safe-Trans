@@ -30,4 +30,10 @@ $(".btn-goback").toggleClass("btn-goback-up");
 $(".forgot").toggleClass("forgot-fade");
 });
 });
+$('.banner-area').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+});
 
