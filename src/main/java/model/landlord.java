@@ -18,9 +18,6 @@ public class landlord extends user {
         this.type = DATABASE_TYPE;
     }
 
-    public String getApartment_name() {
-        return apartment_name;
-    }
 
     public String getHouse_type() {
         return house_type;
