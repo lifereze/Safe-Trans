@@ -1,0 +1,74 @@
+{{#partial "content"}}
+
+    <div class="container" id="form">
+        <form>
+            <div class="panel panel-info">
+                <div class="panel-heading">Your Personal Details</div>
+                <div class="panel-body">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <label for="cars">Account Type:</label>
+                    <select id="account" name="account">
+                        <option value="account">Agent</option>
+                        <option value="account">Landlord</option>
+                        <option value="account">Organisation</option>
+                    </select>
+
+
+                </div>
+            </div>
+
+            <div class="panel panel-info">
+                <div class="panel-heading">Your Address</div>
+                <div class="panel-body">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"><br>
+                    <label for="town">Town *</label><br>
+                    <input type="text" id="town" name="town">
+                    <label for="county">County *</label><br>
+                    <input type="text" id="county" name="county">
+
+
+
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">Contact Details</div>
+                <div class="panel-body">
+
+
+
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">Terms and Conditions</div>
+                <div class="panel-body">
+
+                    <p>
+                        The Deposit Protection Service Custodial Terms and Conditions<br>
+                        In order to use our Custodial scheme, you will need to read and <br>
+                        accept these terms and conditions (the “Terms and Conditions”).
+                    </p>
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms"> I agree to the terms and conditions</label><br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="button button1">CREATE ACCOUNT</button>
+                    <button class="button button2">CANCEL</button>
+                </div>
+                <div class="col-md-6">
+                    <button class="button button1">CREATE ACCOUNT</button>
+                    <button class="button button2">CANCEL</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+{{/partial}}
+{{>layout.hbs}}
