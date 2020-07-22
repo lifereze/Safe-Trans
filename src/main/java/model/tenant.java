@@ -6,19 +6,37 @@ import java.util.List;
 
 public class tenant extends user {
 
-    public static final String DATABASE_TYPE = "animal";
+    public static final String DATABASE_TYPE = "tenant";
 
     public tenant(String name) {
         this.name = name;
         this.type = DATABASE_TYPE;
     }
-    public static List<tenant> all(){
+    public static List<user> all(){
         try (Connection con = DB.sql2o.open()){
-            String queryAnimals ="SELECT * FROM animals WHERE type='animal'";
+            String queryAnimals ="SELECT * FROM tenants WHERE type='tenant'";
             return con.createQuery(queryAnimals)
                     .throwOnMappingFailure(false)
-                    .executeAndFetch(Animal.class);
+                    .executeAndFetch(user.class);
 
+        }
+    }
+    public void  saveAge(String age){
+        String sql ="UPDATE tenant SET age=:age WHERE id=:id";
+        try (Connection con = DB.sql2o.open()){
+            con.createQuery(sql)
+                    .addParameter("age", age)
+                    .addParameter("id", this.id)
+                    .executeUpdate();
+        }
+    }
+    public void saveHealth(String health){
+        String sql ="UPDATE tenant SET health=:health WHERE id=:id";
+        try (Connection con = DB.sql2o.open()){
+            con.createQuery(sql)
+                    .addParameter("health", health)
+                    .addParameter("id", this.id)
+                    .executeUpdate();
         }
     }
 }
