@@ -29,15 +29,11 @@ public class App {
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
-        post("/welcome", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-
-            String inputtedUsername = request.queryParams("");
-            request.session().attribute("username", inputtedUsername);
-            model.put("", inputtedUsername);
-
-            return new ModelAndView(model, "index.hbs");
+        get("/user-form/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return new ModelAndView(model, "user-form.hbs");
         }, new HandlebarsTemplateEngine());
+
 
 
 
