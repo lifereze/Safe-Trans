@@ -6,5 +6,3 @@ model/user.java
  model.user
 model/tenant.java
  model.tenant
-model/DB.java
- model.DB
