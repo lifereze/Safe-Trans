@@ -19,7 +19,7 @@ public class App {
         }
         port(port);
 
-        staticFileLocation("/public");
+        staticFileLocation("/Public/db/public");
 
      //start session
         get("/", (request, response) -> {
@@ -32,7 +32,7 @@ public class App {
         }, new HandlebarsTemplateEngine());
         get("/login", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("username", request.session().attribute("username"));
+            model.put("name", request.session().attribute("name"));
 
             return new ModelAndView(model, "login.hbs");
         }, new HandlebarsTemplateEngine());
