@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head style="content-align:center;">
@@ -15,29 +16,29 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="css/style.js"></script>
-
-
-
 </head>
-
-
 <body style="content-align:center;">
-
-<div class="container-fluid" style="content-align:center;">
-    <!--begin main template-->
-
-    <div class="main-content" style="content-align:center;">
-        {{#block "content"}}
-        {{/block}}
-
+<header>
+    <div class="container" style="content-align:center;">
+        <div class = "brand-name">
+            <a href="" class="logo">SAFE-TRANS</a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li class="navbar-left"><a href="">HOME</a></li>
+                <li class="navbar-left"><a href="">ABOUT</a></li>
+                <li class="navbar-left"><a href="">TENANT</a></li>
+                <li class="navbar-left"><a href="">LANDLORD</a></li>
+                <li class="navbar-right"><a href="">CREAT YOUR ACCOUNT</a></li>
+                <li class="navbar-right"><a href="">LOGIN</a></li>
+            </ul>
+        </div>
     </div>
-
-</div>
+</header>
+{{#block "content"}}
+{{/block}}
 <!--end main template-->
 {{#block "footer"}}
-
     </body>
-
     </html>
-
 {{/block}}
