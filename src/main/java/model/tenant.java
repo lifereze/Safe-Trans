@@ -22,7 +22,7 @@ public class tenant extends user {
         }
     }
     public void  saveAge(String age){
-        String sql ="UPDATE tenant SET age=:age WHERE id=:id";
+        String sql ="UPDATE users SET age=:age WHERE id=:id";
         try (Connection con = DB.sql2o.open()){
             con.createQuery(sql)
                     .addParameter("age", age)
@@ -31,7 +31,7 @@ public class tenant extends user {
         }
     }
     public void saveHealth(String health){
-        String sql ="UPDATE tenant SET health=:health WHERE id=:id";
+        String sql ="UPDATE users SET health=:health WHERE id=:id";
         try (Connection con = DB.sql2o.open()){
             con.createQuery(sql)
                     .addParameter("health", health)

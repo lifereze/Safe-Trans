@@ -15,12 +15,12 @@ public class landlord extends user {
     public static final String ADULT ="adult";
 
     //discriminator
-    public static final String DATABASE_TYPE = "endangered animal";
+    public static final String DATABASE_TYPE = "landlord";
 
     private String age;
     private String health;
 
-    public EndangeredAnimal(String name) {
+    public landlord(String name) {
         this.name = name;
         this.type = DATABASE_TYPE;
     }
@@ -33,11 +33,11 @@ public class landlord extends user {
         return health;
     }
 
-    public static List<EndangeredAnimal> all(){
+    public static List<landlord> all(){
         try (Connection con = DB.sql2o.open()){
-            String queryEndangered = "SELECT * FROM animals WHERE type='endangered animal'";
+            String queryEndangered = "SELECT * FROM users WHERE type='landlord'";
             return con.createQuery(queryEndangered)
-                    .executeAndFetch(EndangeredAnimal.class);
+                    .executeAndFetch(landlord.class);
         }
     }
 
