@@ -512,3 +512,37 @@ a.btn-goback:hover {
     fill: #1059FF;
     transform: rotate(180deg)
 }
+.track{jpg
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://hpdconsult.com/wp-content/uploads/2019/05/1211-B-11-RENDER-02.jpg");
+    height: 55vh;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center ;
+}
+.track h1{
+    padding-top: 45px;
+    color: #ffffff;
+}
+.tracker-form{
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+}
+nav li a{
+   color: #ffffff;
+    font-size: 20px;
+}
+li a:hover{
+    border-bottom: 2px solid blue;
+    color: green;
+}
+.sight{
+    border-bottom: 2px solid #000000;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px){
+    .tracker-form{
+        width: 90%;
+    }
+}
