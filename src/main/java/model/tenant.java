@@ -6,6 +6,7 @@ import java.util.List;
 
 public class tenant extends user {
 
+
     public static final String DATABASE_TYPE = "tenant";
 
     public tenant(String name) {
@@ -21,23 +22,7 @@ public class tenant extends user {
 
         }
     }
-    public void  saveAge(String age){
-        String sql ="UPDATE users SET age=:age WHERE id=:id";
-        try (Connection con = DB.sql2o.open()){
-            con.createQuery(sql)
-                    .addParameter("age", age)
-                    .addParameter("id", this.id)
-                    .executeUpdate();
-        }
-    }
-    public void saveHealth(String health){
-        String sql ="UPDATE users SET health=:health WHERE id=:id";
-        try (Connection con = DB.sql2o.open()){
-            con.createQuery(sql)
-                    .addParameter("health", health)
-                    .addParameter("id", this.id)
-                    .executeUpdate();
-        }
-    }
+
+
 }
 

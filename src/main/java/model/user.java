@@ -8,7 +8,6 @@ public abstract class user<String> {
     public String name;
     public int user_id;
     public String location;
-    public String apartment;
     public String type;
 
 
@@ -29,9 +28,6 @@ public abstract class user<String> {
         return location;
     }
 
-    public String getApartment(){
-        return apartment;
-    }
     public String getType(){
         return type;
     }
@@ -39,7 +35,7 @@ public abstract class user<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
+        user user = (model.user) o;
         return Objects.equals(name, user.name) &&
                 Objects.equals(type, user.type);
     }
@@ -51,8 +47,8 @@ public abstract class user<String> {
 
     public void save(){
         try (Connection con = DB.sql2o.open()){
-            String sql = "INSERT INTO users(name, type) VALUES(:name,:type)";
-            this.id = (int) con.createQuery(sql, true)
+            String sql = (String) "INSERT INTO users(name, type) VALUES(:name,:type)";
+            this.id = (int) con.createQuery((java.lang.String) sql, true)
                     .addParameter("name",this.name)
                     .addParameter("type",this.type)
                     .executeUpdate()

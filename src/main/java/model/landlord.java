@@ -7,30 +7,23 @@ import java.util.List;
 
 public class landlord extends user {
 
-    public static final String HEALTHY ="healthy";
-    public static final String OKAY ="okay";
-    public static final String ILL ="ill";
-    public static final String NEWBORN ="newborn";
-    public static final String YOUNG ="young";
-    public static final String ADULT ="adult";
 
     //discriminator
     public static final String DATABASE_TYPE = "landlord";
 
-    private String age;
-    private String health;
+    private String house_type;
 
     public landlord(String name) {
         this.name = name;
         this.type = DATABASE_TYPE;
     }
 
-    public String getAge() {
-        return age;
+    public String getApartment_name() {
+        return apartment_name;
     }
 
-    public String getHealth() {
-        return health;
+    public String getHouse_type() {
+        return house_type;
     }
 
     public static List<landlord> all(){
@@ -41,7 +34,15 @@ public class landlord extends user {
         }
     }
 
-
+    public void saveHouse_Type(String health){
+        String sql ="UPDATE users SET house_type=:house_type WHERE id=:id";
+        try (Connection con = DB.sql2o.open()){
+            con.createQuery(sql)
+                    .addParameter("house_type", house_type)
+                    .addParameter("id", this.id)
+                    .executeUpdate();
+        }
+    }
 
 
 }
