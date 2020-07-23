@@ -1,15 +1,11 @@
-CREATE DATABASE safetrans;
-\c safetrans;
-CREATE TABLE IF NOT EXISTS landlord (
-    landlordId SERIAL PRIMARY KEY,
-    landlordName VARCHAR,
-    apartment VARCHAR,
-    location VARCHAR
+CREATE DATABASE safe_trans;
+\c safe_trans;
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR,
+    user_id VARCHAR,
+    location VARCHAR,
+    type VARCHAR
 );
 
-CREATE TABLE IF NOT EXISTS tenant (
-    tenantId SERIAL PRIMARY KEY,
-    tenantName  VARCHAR,
-    houseNumber INT,
-    exitDate VARCHAR
-);
+CREATE DATABASE safe_trans_test WITH TEMPLATE safe_trans;
