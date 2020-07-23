@@ -26,6 +26,7 @@ public class landlord extends user {
         try (Connection con = DB.sql2o.open()){
             String queryEndangered = "SELECT * FROM users WHERE type='landlord'";
             return con.createQuery(queryEndangered)
+                    .throwOnMappingFailure(false)
                     .executeAndFetch(landlord.class);
         }
     }

@@ -48,9 +48,11 @@ public abstract class user<String> {
 
     public void save(){
         try (Connection con = DB.sql2o.open()){
-            String sql = (String) "INSERT INTO users(name, type) VALUES(:name,:type)";
+            String sql = (String) "INSERT INTO users(name, user_id, location, type) VALUES(:name, :user_id, :location, :type)";
             this.id = (int) con.createQuery((java.lang.String) sql, true)
                     .addParameter("name",this.name)
+                    .addParameter("user_id", this.user_id)
+                    .addParameter("location", this.location)
                     .addParameter("type",this.type)
                     .executeUpdate()
                     .getKey();
