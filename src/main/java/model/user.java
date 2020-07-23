@@ -31,6 +31,7 @@ public abstract class user<String> {
     public String getType(){
         return type;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
