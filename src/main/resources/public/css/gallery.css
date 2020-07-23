@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    outline: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    transition: .35s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -ms-transition:.3s ease;
+    scroll-behavior: smooth;   
+    cursor: default;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    padding: 1rem 1rem;
+    outline: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: currentColor;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+.nav{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    padding: .0rem 1rem;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ z-index: 10;
+ height: 3.6rem;
+}
+.web-title{
+    color: black;
+    font-size: 2rem;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-user-select:none ;
+}
+.nav-list{
+    display: flex;
+    width: 21rem;
+    min-width: 15rem;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;   
+}
+.nav-list-items{
+    transition: .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 76%;
+    padding: 0.1rem 1.4rem .3rem 1.4rem;
+    font-size: 1.3rem;
+    border-radius: .2rem;
+    background-color: white;
+}
+.nav-list-items:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: rgb(216, 214, 214);
+    cursor: pointer;
+}
+.nav-list-items:nth-child(3){
+    background: #202020;
+    color: white;
+    border-radius: .1rem;
+}
+.nav-btn-login{
+    transition: background-color 0s;
+    transition: 0.35s ease-in-out;
+    outline: none;
+    -webkit-outline:none;
+    padding: .1rem 1.2rem .3rem 1.2rem;
+    border:none;
+   color: rgb(248, 248, 248);
+    border-radius: .2rem;
+    font-size: 1.2rem;
+    background:#202020;
+    box-shadow: 0rem .26rem .4rem -.2rem rgb(43, 1, 92);
+}
+.nav-btn-login:hover{
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    color: #0091ea;
+    background:#3f3f3f;
+    
+}
+.nav-btn-login:active{
+    transition: 0s;
+    background-color: white;
+}
+
+/* end of nav and header*/
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 88rem;
+    width: 100%;
+    background-color: white;
+    padding: 3.7rem 0rem ;
+}
+.body-top-img{
+    width: 96%;
+    border-radius: .4rem;
+
+    height: fit-content;
+    min-height: 23rem;
+    margin-bottom: 10rem;
+    max-height: 96vh;
+}
+.top-img-img{
+    object-fit: cover;
+    width: 100%; 
+    max-height: calc(100vh - 4rem);
+    border-radius: .4rem;
+    image-rendering: optimizeSpeed;
+}
+.img-rows-container{
+    width: 86%;
+    overflow-x: auto;
+    max-width: 72rem;
+     scrollbar-color: rgb(68, 0, 255);
+    scrollbar-width: 1rem;
+    scrollbar-arrow-color: rgb(11, 1, 34);
+    justify-content: space-evenly;
+}
+.body-image-rows{
+    overflow-y: hidden;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: fit-content !important;
+    display: flex;
+    margin-bottom: 2rem;
+   
+}
+#gallery-images{
+    border: none;
+    min-width: 15rem;
+    width: 33%;
+    margin: .15rem .15rem .15rem .15rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0rem 1rem 0rem ;
+   position: relative;
+    height: fit-content !important;
+    border-radius: .3rem;
+}
+#gallery-images *:hover {
+    
+   cursor: pointer;
+}
+#gallery-images:hover {
+   box-shadow: 0rem .15rem .6rem -.4rem black;
+}
+#gallery-images img{
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+    image-orientation: unset;
+    margin: 0rem .2rem .5rem 0rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    height:15rem;
+    
+}
+.image-title{
+    font-size: 1.2rem;
+    color: black;
+    margin-left: 1rem;
+}
+.image-text{
+    font-size: 1rem;
+    color: #313131;
+    margin-left: 1.1rem;
+}

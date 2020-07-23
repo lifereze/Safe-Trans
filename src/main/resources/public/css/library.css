@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    outline-color: rgb(77, 77, 77,0);
+    outline-color: #00000000;
+    outline: none;
+    -ms-outline-color:none;
+    cursor: default;
+    scroll-behavior: smooth;
+    transition: 0.3s ease-in-out;
+    -ms-transition:0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;   
+}
+a , a:hover , a:active {
+    padding: 2rem 2rem;
+    outline: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: currentColor;
+    text-decoration: none;
+}
+body{ 
+    padding: 2rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+}
+
+
+/**/
+.body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 50vh;
+    width: 56rem;
+}
+.row{
+    
+    padding: 0;
+    margin: 0;
+}
+.col-md-2{
+    cursor: pointer;
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    border-radius: .4rem;
+    margin:.3rem;
+    background-color: #e4e4e4;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.col-md-2:hover{
+    color: white;
+    background-color: #222228;
+}
