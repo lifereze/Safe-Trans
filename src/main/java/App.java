@@ -19,7 +19,7 @@ public class App {
         }
         port(port);
 
-        staticFileLocation("/Public/db/public");
+        staticFileLocation("/publi");
 
      //start session
         get("/", (request, response) -> {
