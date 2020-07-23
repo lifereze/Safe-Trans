@@ -1,67 +1,109 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-md-4 col-md-offset-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <div class="row">
-                        <h3 class="text-center">Payment Details</h3>
-                        <img class="img-responsive cc-img" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <form role="form">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label>PAY TO</label>
-                                    <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="Valid Account Number for Deposit" />
-                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
-                                    </div>
-                                    <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="Account Name" />
-                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
-                                    </div>
-                                    <label>CARD NUMBER</label>
-                                    <div class="input-group">
-                                        <input type="tel" class="form-control" placeholder="Valid Card Number" />
-                                        <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-7 col-md-7">
-                                <div class="form-group">
-                                    <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
-                                    <input type="tel" class="form-control" placeholder="MM / YY" />
-                                </div>
-                            </div>
-                            <div class="col-xs-5 col-md-5 pull-right">
-                                <div class="form-group">
-                                    <label>CV CODE</label>
-                                    <input type="tel" class="form-control" placeholder="CVC" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group">
-                                    <label>CARD OWNER</label>
-                                    <input type="text" class="form-control" placeholder="Card Owner Names" />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <button class="btn btn-warning btn-lg btn-block">Process payment</button>
-                        </div>
-                    </div>
+{{#partial "content"}}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.js">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="https://source.unsplash.com/1600x300/?nairobi-city-urban-housing" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+                <div class="carousel-caption text-left">
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="welcome">MAKE YOUR PAYMENT</h1>
+                    <p>Making The Process of Deposit Payments More Efficient</p>
+                    <p><a class="btn btn-lg btn-warning" href="/homepage" role="button">More Info</a></p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+     <div class="container" id="paymentForm">
+         <div class="row">
+             <div class="col-sm-8">
+                 <div class="row">
+                     <div class="col-xs-12 col-md-4 col-md-offset-4">
+                         <div class="panel panel-default">
+                             <div class="panel-heading">
+                                 <div class="row">
+                                     <h3 class="text-center">Payment Details</h3>
+                                     <img class="img-responsive cc-img" src="http://www.prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                                 </div>
+                             </div>
+                             <div class="panel-body">
+                                 <form role="form">
+                                     <div class="row">
+                                         <div class="col-xs-12">
+                                             <div class="form-group">
+                                                 <label>PAY TO</label>
+                                                 <div class="input-group">
+                                                     &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <input type="tel" class="form-control" placeholder="Valid Account Number for Deposit" />&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                                     <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                                                 </div>
+                                                 <div class="input-group">
+                                                     <input type="tel" class="form-control" placeholder="Account Name" />
+                                                     <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                                                 </div>
+                                                 <label>CARD NUMBER</label>
+                                                 <div class="input-group">
+                                                     <input type="tel" class="form-control" placeholder="Valid Card Number" />
+                                                     <span class="input-group-addon"><span class="fa fa-credit-card"></span></span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="col-xs-7 col-md-7">
+                                             <div class="form-group">
+                                                 <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                                 <input type="tel" class="form-control" placeholder="MM / YY" />
+                                             </div>
+                                         </div>
+                                         <div class="col-xs-5 col-md-5 pull-right">
+                                             <div class="form-group">
+                                                 <label>CV CODE</label>
+                                                 <input type="tel" class="form-control" placeholder="CVC" />
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="col-xs-12">
+                                             <div class="form-group">
+                                                 <label>CARD OWNER</label>
+                                                 <input type="text" class="form-control" placeholder="Card Owner Names" />
+                                             </div>
+                                         </div>
+                                     </div>
+
+                                 </form>
+                             </div>
+                             <div class="panel-footer">
+                                 <div class="row">
+                                     <div class="col-xs-12">
+                                         <button class="btn btn-warning btn-lg btn-block">Process payment</button>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             </div>
+             <div class="col-sm-4">
+                    <h2>Terms and Conditions</h2>
+                    <p>You authorize us to charge each payment to your preferred payment method. If the preferred method is unavailable
+                        (for example, a card has expired and cannot be charged successfully), we will use another payment method we have on record for you.
+                        You agree to maintain in
+                        your Safe-Trans account at least one valid credit card that expires no earlier than 20 days after your last payment due date</p>
+                <h2>The following credit and debit cards can be used as payment:</h2>
+
+                     <p>* Visa</p>
+                     <p>* MasterCard/EuroCard</p>
+                     <p>* M-Pesa</p>
+                     <p>* Visa, MasterCard, or American Express pre-paid credit</p>
+
+
+             </div>
+         </div>
+
+{{/partial}}
+{{>layout.hbs}}
+

@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head style="content-align:center;">
     <title style="content-align:center;"></title>
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!--Fontawesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -16,29 +19,77 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="css/style.js"></script>
+
 </head>
-<body style="content-align:center;">
-<header>
-    <div class="container" style="content-align:center;">
-        <div class = "brand-name">
-            <a href="" class="logo">SAFE-TRANS</a>
-        </div>
-        <div class="navbar">
-            <ul>
-                <li class="navbar-left"><a href="">HOME</a></li>
-                <li class="navbar-left"><a href="">ABOUT</a></li>
-                <li class="navbar-left"><a href="">TENANT</a></li>
-                <li class="navbar-left"><a href="">LANDLORD</a></li>
-                <li class="navbar-right"><a href="">CREAT YOUR ACCOUNT</a></li>
-                <li class="navbar-right"><a href="">LOGIN</a></li>
-            </ul>
-        </div>
+<body>
+<div class="header">
+    <a href="#default" class="logo">Safe-Trans</a>
+    <div class="header-right">
+        <a class="active" href="/homepage">Home</a>
+        <a href="/homepage">About</a>
+        <a href="/landlord/info">Landlord</a>
+        <a href="/tenant/info">Tenant</a>
+        <a href="/user/new">Create Account</a>
+        <a href="/login">Login</a>
+        <a href="/contact">Contact Us</a>
     </div>
-</header>
+</div>
+
 {{#block "content"}}
 {{/block}}
 <!--end main template-->
 {{#block "footer"}}
-    </body>
-    </html>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">A financial app that acts as an intermediate between a tenant and a landlord whereby the app handles the deposit cash from the tenant and all the legal bindings. In a scenario where a tenant wants to withdraw from the contract, the landlord confirms that the vacated room is okay and the app can proceed and issue the tenant with the deposit cash.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://safetrans.com">C</a></li>
+                        <li><a href="http://safetrans.com/category/">UI Design</a></li>
+                        <li><a href="http://safetrans.com/category/">Java</a></li>
+                        <li><a href="http://safetrans.com/category/android/">Android</a></li>
+                        <li><a href="http://safetrans.com/category/templates/">Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://safetrans.com/about/">About Us</a></li>
+                        <li><a href="http://safetrans.com/contact/">Contact Us</a></li>
+                        <li><a href="http://safetrans.com/contribute/">Contribute</a></li>
+                        <li><a href="http://safetrans.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="http://safetrans.com/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2020
+                        <a href="#">SafeTrans</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 {{/block}}
+</body>
+</html>

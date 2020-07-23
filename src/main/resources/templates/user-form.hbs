@@ -1,8 +1,25 @@
 {{#partial "content"}}
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.js">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="bd-placeholder-img" width="100%" height="100%" src="https://source.unsplash.com/1600x300/?nairobi-city-urban-housing" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"></rect></svg>
+            <div class="container">
+                <div class="carousel-caption text-left">
+                    <br>
+                    <br>
+                    <br>
+                    <h1 id="welcome">NEW TENANCY</h1>
+                    <p>Improving your experience with tenancy in Nairobi</p>
+                    <p><a class="btn btn-lg btn-warning" href="/homepage" role="button">Find Out More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="track">
         <ul class="nav justify-content-end pt-4">
             <li class="nav-item">
-                <a class="nav-link active" href="/">HOME</a>
+                <a class="nav-link active" href="/homepage">HOME</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="">HISTORY</a>
@@ -31,7 +48,7 @@
                         <h2 class="text-center">Tenant</h2>
                         <form action="/user/new" method="post">
                             <div class="form-group">
-                                <label for="name">FULL NAMEs</label>
+                                <label for="name">FULL NAMES</label>
                                 <input type="text" class="form-control"  name="name" id="name" aria-describedby="emailHelp" placeholder="Enter Your Full legal Names" required>
                             </div>
                             <div class="form-group">
