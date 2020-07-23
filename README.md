@@ -27,7 +27,7 @@ There are currently no known bugs but incase of any, feel free to reach out via 
 - JQuery
 - Javascript
 
-## Support and Contact Details :coffee:
+## Support and Contact Details :phone:
 Let's have talk via arnoldlifereze63@gmail.com
 
 # MIT License
