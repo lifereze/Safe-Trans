@@ -714,3 +714,21 @@ Payment CSS
     .cc-img {
         margin: 0 auto;
     }
+    /*---------Footer----------*/
+
+footer{
+  background-color: #0B745C;
+  color:gold;
+}
+#footer{
+  background-color: #0B745C;
+  color:gold;
+}
+#aboutus{
+  background-color: #0B745C;
+  color:gold;
+}
+#link{
+  background-color: #0B745C;
+  color:gold;
+}
