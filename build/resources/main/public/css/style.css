@@ -1,47 +1,3 @@
-<<<<<<< HEAD
-
-
-html,
-* {
-   box-sizing: border-box;
-   font-family: 'Open Sans', sans-serif;
-   margin:0
-}
-
-body {
-   background: linear-gradient(rgba(245, 245, 245, 0.3), rgba(245, 245, 245, 0.3)), url(https://geoscapeglobal.co.ke/wp-content/uploads/2019/08/IMG-20190826-WA0009.jpg) no-repeat center center fixed;
-   background-size: cover;
-   margin: 0;
-}
-.container{
-max-width:11400px;
-background-color:blue;
-margin:auto;}
-.row{
-display:flex;
-flex-wrap:wrap;
-}
-header .row{
-justify-content:space-betweem;
-}
-header .brand-name{
-background-color:blue;
-font-size:22px;
-font-weight:600;
-color: #ffffff;
-}
-header .navbar{
-background-color:red;
-}
-header .navbar ul{
-List-Style:none;
-padding:0;
-margin:0;
-}
-header .navbar ul li{
-display:inline-bloc;
-margin-left:35px;
-=======
 * {box-sizing: border-box;}
 
 body {
@@ -54,9 +10,8 @@ body {
   background-color: #145DA0;
   color:white;
   padding: 20px 10px;
->>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
 }
-      .bd-placeholder-img {
+   .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
         -webkit-user-select: none;
@@ -70,28 +25,8 @@ body {
           font-size: 3.5rem;
         }
       }
-<<<<<<< HEAD
-header .navbar ul li a::before{
-content: "";
-height: 3px;
-background-color: #ffffff;
-width:0%;
-position: absolute;
-right:0px;}
-header{
-background-color: blue;
-position:absolute;
-left:0px;
-right:0px;
-border-bottom: 1px solid;
-}
-.home{
-min-height: 100vh;
-background-image:url("https://www.ahisummit.com/wp-content/uploads/2019/05/conversation-1.jpg");
-background-size:cover;
-background-position:center;
-=======
-
+#welcome{
+text-align:center;}
 .header a {
   float: left;
   color: black;
@@ -175,8 +110,46 @@ line-height:1.9;
 font-family:poppins;
 text-align:center;
 
->>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
 }
+<<<<<<< HEAD
+header .navbar ul li{
+display:inline-bloc;
+margin-left:35px;
+}
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+header .navbar ul li a::before{
+content: "";
+height: 3px;
+background-color: #ffffff;
+width:0%;
+position: absolute;
+right:0px;}
+header{
+background-color: blue;
+position:absolute;
+left:0px;
+right:0px;
+border-bottom: 1px solid;
+}
+.home{
+min-height: 100vh;
+background-image:url("https://www.ahisummit.com/wp-content/uploads/2019/05/conversation-1.jpg");
+background-size:cover;
+background-position:center;
+=======
 .carousel-caption a{
 text-transform:uppercase;
 background: #262626;
@@ -217,6 +190,7 @@ padding: .2rem 1rem;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
 color:#fff! important;
+>>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
 }
 .w-100{
 height:100vh;
@@ -241,11 +215,7 @@ font-weight:90px;
 font-size:30px;
 }
 
-<<<<<<< HEAD
-.container {
-=======
 #login-container {
->>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
    width: 100%;
    padding-top: 60px;
    padding-bottom: 100px
@@ -275,11 +245,7 @@ font-size:30px;
    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.1)
 }
 
-<<<<<<< HEAD
-.nav {
-=======
 #login {
->>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
    width: 100%;
    height: 100px;
    padding-top: 40px;
@@ -744,10 +710,7 @@ a.btn-goback:hover {
    fill: #1059FF;
    transform: rotate(180deg)
 }
-<<<<<<< HEAD
-=======
 Payment CSS
     .cc-img {
         margin: 0 auto;
     }
->>>>>>> c93b57c863a4f82d67fb72839df5247a0b528816
